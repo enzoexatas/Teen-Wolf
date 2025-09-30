@@ -2,130 +2,163 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Teen Wolf</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teen Wolf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #0d1b2a;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #1b263b;
+    }
+
+    .nav-link {
+      color: #ffffff !important;
+    }
+
+    .btn-primary {
+      background-color: #0077b6;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #00b4d8;
+    }
+
+    .fundo-galeria {
+      background-color: #1e3a5f;
+      border-radius: 15px;
+    }
+
+    .formulario {
+      background-color: #1b263b;
+      padding: 2rem;
+    }
+
+    footer {
+      background-color: #1b263b;
+      color: #ffffff;
+    }
+  </style>
 </head>
 
 <body>
-    <header class=" p-5">
+  <header class="p-5">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz9zJGQiAg_8V8SQEdK3qjy7gsdm4Dr2o1hA&s" class="nav-img" alt="Teen Wolf Logo" loading="lazy">
+      <ul class="nav mt-5">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">Acessibilidade</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+          <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+          <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+          <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar o contraste de cores">
+            <i class="bi bi-shadows"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <nav class="container d-flex justify-content-between align-items-center" >
-            <img style="width: 150px;" src="https://img.wattpad.com/db54bcf5aa4245cd3ff1f3174f7fae09053f7909/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f704e7879647a537a6e5a583155773d3d2d3233342e313437323136326333393632646462353630333037363034303936352e6a7067?s=fit&w=720&h=720" class="nav-img" loading="lazy">
-            <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
-            <div id="acessibilidade" class="menu-acessibilidade"> 
-                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
-                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
-                </div>
+  <main class="container my-5">
+    <!-- Seção Início -->
+    <section id="inicio" class="my-5">
+      <div class="inicio-fundo d-flex justify-content-between align-items-center">
+        <div class="esquerda-conteudo">
+          <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo ao universo</h1>
+          <img src="img/teenwolf-title.pnghttps://capricho.abril.com.br/wp-content/uploads/2021/06/teenwolf_cast.jpg?quality=85&strip=info&w=1000" class="mb-3" width="563" height="278" alt="Teen Wolf Título" loading="lazy">
+          <a href="#sobre" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+        </div>
+        <img src="" alt="Elenco da série Teen Wolf" title="Elenco Teen Wolf" class="img-fluid img-inicio">
+      </div>
+    </section>
+
+    <!-- Seção sobre Teen Wolf -->
+    <section id="sobre" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre Teen Wolf">
+      <div class="container d-flex align-items-center">
+        <div class="col-4 d-flex justify-content-center">
+          <img src="https://i.redd.it/daily-character-discussion-scott-mccall-v0-6jd0q429ckbb1.jpg?width=300&format=pjpg&auto=webp&s=0f6b129244017bafafdd1fbce8d1e2590d8ec913" class="rounded-pill" width="273" height="331" loading="lazy" alt="Scott McCall">
+        </div>
+        <div class="col-5">
+          <h2>O que foi Teen Wolf?</h2>
+          <p class="p-2">Teen Wolf foi uma série de televisão americana que estreou em 2011 e terminou em 2017, criada por Jeff Davis. Inspirada no filme homônimo de 1985, a série acompanha a vida de Scott McCall, um adolescente que é mordido por um lobisomem e precisa equilibrar sua vida escolar com os perigos sobrenaturais do novo mundo em que foi inserido. Com uma mistura de ação, drama, romance e mitologia, Teen Wolf se tornou um sucesso cult e conquistou uma base de fãs fiel ao redor do mundo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+      <h2 class="text-center pt-5">Galeria</h2>
+      <div class="container p-3 mt-3 fundo-galeria">
+        <div class="row justify-content-md-center">
+          <div class="col-md-4">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/2/24/Teen_Wolf_%27The_Movie%27.png" class="img-fluid rounded-5" alt="Cena de Teen Wolf" loading="lazy">
+          </div>
+          <div class="col-md-4">
+            <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img640c9c63bea2e6.37411987.jpg?lastEdited=1678548072&w=600&h=600&f=webp" class="img-fluid rounded-5" alt="Personagens principais" loading="lazy">
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-md-center">
+          <div class="col-md-4">
+            <img src="https://pbs.twimg.com/media/EppffmiXMAAK55V.jpg:large" class="img-fluid rounded-5" alt="Scott McCall e amigos" loading="lazy">
+          </div>
+          <div class="col-md-4">
+            <img src="https://i.redd.it/vsq7nruimjk61.jpg " class="img-fluid rounded-5" alt="Lobisomens em ação" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-10 rounded-5 formulario">
+          <h2 class="mb-3">Entre em contato</h2>
+          <form>
+            <div class="form-group mb-3">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
             </div>
-        </nav>
-       
-    </header>
-
-
-    <main class="container my-5">
-
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="https://capricho.abril.com.br/wp-content/uploads/2021/06/teenwolf_cast.jpg?quality=85&strip=info&w=1000" class="mb-3" style="width: 563; height: 278;" loading="lazy">
-                    <a href="#tropicalia"
-                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
-                </div>
-                <img src="" alt="TEEN WOLF>
-
-              </div>
-        </section>
-
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
-            <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center ">
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos%2Flobo&psig=AOvVaw3BJgtkxApw-9TR0hs6U10i&ust=1756318253134000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDWxr6JqY8DFQAAAAAdAAAAABAE" class="rounded-pill" width="273" height="331" loading="lazy">
-                </div>
-                <div class="col-5">
-                    <h2>O que foi o Teen Wolf ?</h2>
-                    <p class="p-2">Teen Wolf é uma série de televisão americana de drama sobrenatural, criada por Jeff Davis, vagamente inspirada no filme de 1985 com o mesmo nome. A série segue a história de Scott McCall (Tyler Posey), um estudante do ensino médio que é mordido por um lobisomem e precisa lidar com as consequências, incluindo as mudanças em seu corpo e as ameaças sobrenaturais que surgem em sua cidade, Beacon Hills.  </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
             </div>
-        </section>
-
-        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
-
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="de boa.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="nove.jpg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
-                </div>
-                <div class="row mt-4  justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="Teen_Wolf.webp" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="oii.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
-             </div>
-        </section>
-
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
-                                mensagem</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="form-group mb-3">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
             </div>
-        </section>
-    </main>
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por enzo. Projeto fictício sem fins comerciais.</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-    <script src="script.js"></script>
-  
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center p-3 fst-italic">
+    <p>Acesse nossas redes:</p>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-tiktok"></i>
+    <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
